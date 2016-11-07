@@ -32,11 +32,11 @@ Assuming the R file is in your current working directory.
 run_analysis(directory, overwrite, dlmethod)
 
 EXAMPLES: |
-----------|----------------------------------------------------
+----------|-----------------------------------------------------
           |run_analysis("mynewdirectory")  
           |run_analysis("myexistingdirectory", TRUE)  
-          |run_analysis("myexistingdirectory", TRUE, "libcurl")  
-
+          |run_analysis("myexistingdirectory", TRUE, "libcurl") 
+----------|-----------------------------------------------------
 **directory** - You must specify a directory name (in quotes) for the extracted data files. NO DEFAULT
 
 **overwrite** - If the directory you specified already exists.  The script will overwrite it without prompting when this argument is set to TRUE.  Execution will stop if the directory already exists and this value is not set to TRUE. DEFAULT: FALSE
