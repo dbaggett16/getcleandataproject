@@ -50,9 +50,34 @@ run_analysis(directory, overwrite, dlmethod)
 
 1. Checks to see if *dplyr* library is installed
   + Attempts to load library if installed
-  + Stops execution with error if *dplyr* is not installed
-2.
-3.
+  + Stops execution with error if *dplyr* is not installed  
+2. Checks for "directory" argument
+  + Stops execution with error message if "directory" was not passed to function 
+3. Checks to see if "overwrite" argument is set to TRUE
+  + Overwrites existing directory if set to TRUE
+  + Stops execution with error message if "directory" exists and overwrite not set to TRUE
+  
+4. Checks to see if "dlmethod"(download method) argument is passed
+  + Sets download method to the dlmethod value if passed by the user  
+5. Checks OS type to set download method if no "dlmethod" is passed
+  + Sets download method to "curl" if "Darwin" is detected
+  + Sets download method to "auto" for all others  
+6. Dowloads data archive and saves to "temp" variable
+7. Extracts data archive to specified directory
+8. Reads in the following files to individual data frames
+  + X_test.txt, Y_test.txt, subject_test.txt
+  + X_train.txt, Y_train.txt, subject_train.txt  
+9. Merges all test, training and subject data into a single data frame
+10. Creates descriptive variable names
+  + "subject", "activity" and feature vector(fv) names
+11. Renames activities with tidy data names
+12. Extracts mean and standard deviation for each measurement
+  + Data are grouped by "subject" and then by "activity"
+  + Means are calculated for each element in each feature vector
+  + The feature vector means are summarized by "subject" and "activity"
+13. Resulting data frame is saved to an independent "tidydata" file in the specified directory
+14. Execution completes with the "Completed Successfully" message and the location of the "tidydata" file
+
 
 ### Normal Output
 
