@@ -5,9 +5,10 @@ date: "November 7, 2016"
 output: markdown document
 ---
 
-# Codebook for Getting and Cleaning Data Peer Review Project
+# Codebook for tidydata file
 
 ## Variable Names
+All variable names were changed to lowercase and underscores were removed. Numeric identifyers were replaced with descriptive names for activities.  Subject identifiers were left as integers, because no additional information was available.  
 
 ### subject (integer)
   Person performing each activity is identified by an integer.  There is a total of 30 subjects identified in the the training and test data sets.
@@ -27,4 +28,4 @@ output: markdown document
   Subject is laying down stationaary.  Activity name was changed from LAYING for consistency.
 
 ### mean.fv{1:561} (numeric)
-  These variables summarize each activity for each subject.  The mean of feature vector(fv) element {1:561} is reported for each subject and activity group. 
+  These variables summarize each activity for each subject.  The mean of each feature vector(fv) element {1:561} is reported for each subject and activity group. 
