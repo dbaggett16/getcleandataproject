@@ -26,5 +26,5 @@ output: markdown document
 #### laying
   Subject is laying down stationaary.  Activity name was changed from LAYING for consistency.
 
-### mean.fv[1:561] (numeric)
-  These variables summarize each activity for each subject.  The mean of feature vector(fv) element [1:561] is reported for each subject and activity group. 
+### mean.fv{1:561} (numeric)
+  These variables summarize each activity for each subject.  The mean of feature vector(fv) element {1:561} is reported for each subject and activity group. 

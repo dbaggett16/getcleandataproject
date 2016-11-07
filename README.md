@@ -1,13 +1,20 @@
+---
+title: "README.md"
+author: "David S. Baggett"
+date: "November 7, 2016"
+output: html_document
+---
+
 # README - Getting and Cleaning Data: Final Project
 
 ## Overview
 The purpose of this project is to demonstrate how a dataset can be downloaded and cleaned using an R script.  The dataset will be dowloaded and extracted from a ZIP archive.  Files will be aggregated and read into R.  Variables will be renamed and a file containing a new tidy dataset derived from the original files will be generated.  This new dataset can be used for further analysis.
 
 ## Project Files
-README.md - This file.  Describes the project and how to excute the scripts.  
-Codebook.md - Contains detailed description of the dataset and information regarding any transformations or modifications that were done to produce the tidy dataset.
-run_analyis.R - The script that performs all operations including downloading the data, tranforming and saving as a tidy dataset in a new file.  
-tidydata - The resulting tidy data file that can be imported using read.table('[your directory]/tidydata')
+**README.md** - This file.  Describes the project and how to excute the scripts.  
+**Codebook.md** - Contains detailed description of the dataset and information regarding any transformations or modifications that were done to produce the tidy dataset.  
+**run_analyis.R** - The script that performs all operations including downloading the data, tranforming and saving as a tidy dataset in a new file.  
+**tidydata** - The resulting tidy data file that can be imported using read.table('[your directory]/tidydata')
 
 ## Prerequisite
 This script requires the dplyr library.  If the script finds dplyr installed, it will attempt to load the library.  Execution will stop if dplyr is not installed.  
@@ -24,9 +31,11 @@ Assuming the R file is in your current working directory.
 ### Usage
 run_analysis(directory, overwrite, dlmethod)
 
-EXAMPLES:  run_analysis("mynewdirectory")  
-          run_analysis("myexistingdirectory", TRUE)  
-          run_analysis("myexistingdirectory", TRUE, "libcurl")  
+EXAMPLES: |
+----------|----------------------------------------------------
+          |run_analysis("mynewdirectory")  
+          |run_analysis("myexistingdirectory", TRUE)  
+          |run_analysis("myexistingdirectory", TRUE, "libcurl")  
 
 **directory** - You must specify a directory name (in quotes) for the extracted data files. NO DEFAULT
 
