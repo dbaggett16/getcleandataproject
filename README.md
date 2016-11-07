@@ -46,6 +46,14 @@ run_analysis(directory, overwrite, dlmethod)
 
 **dlmethod** - Some systems require a specific download method.  The script will detect Mac OSX as "Darwin" and set the method to "curl"  Otherwise the method will be set to auto.  DEFAULT: "auto"
 
+### Functional Details
+
+1. Checks to see if *dplyr* library is installed
+  + Attempts to load library if installed
+  + Stops execution with error if *dplyr* is not installed
+2.
+3.
+
 ### Normal Output
 
 Downloading data ZIP archive...  
