@@ -1,7 +1,7 @@
 ---
 title: "Codebook.md"
 author: "David S. Baggett"
-date: "November 6, 2016"
+date: "November 7, 2016"
 output: markdown document
 ---
 
@@ -10,7 +10,7 @@ output: markdown document
 ## Variable Names
 
 ### subject (integer)
-  Person performing each activity is identified by an integer.  There is a total of 60 subjects identified in the the training and test data sets.
+  Person performing each activity is identified by an integer.  There is a total of 30 subjects identified in the the training and test data sets.
 ### activity (character)
   There is a total of six(6) activities.  They are listed below.
 #### standing
