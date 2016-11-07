@@ -36,7 +36,7 @@ run_analysis <- function(directory = 0, overwrite = FALSE, dlmethod = 0)
 
 # Create descriptive variable names.
   message("Creating descriptive variable names...")
-  names(traintest) <- c("subject", "activity", sprintf("mean.fv%d", 1:561))
+  names(traintest) <- c("subject", "activity", sprintf("fv%d", 1:561))
 
 # Rename activities with more descriptive names.
   message("Renaming activities...")
@@ -47,8 +47,9 @@ run_analysis <- function(directory = 0, overwrite = FALSE, dlmethod = 0)
 # Extract mean and standard deviation for each measurement.
   message("Aggregating data by Subject and Activity.")
   aggdata <- data.frame(traintest)
-  tidydata <- group_by(aggdata, subject, activity) %>% summarize_each(funs(mean), mean.fv1:mean.fv561)
-
+  tidydata <- group_by(aggdata, subject, activity) %>% summarize_each(funs(mean), fv1:fv561)
+  names(traintest) <- c("subject", "activity", sprintf("mean.fv%d", 1:561))
+  
 # Create a second, independent tidy data set with the average of each variable for each activity and each subject.
   message("Creating tidy data file.")
   write.table(tidydata, file = paste(directory, "/tidydata", sep = ""))
