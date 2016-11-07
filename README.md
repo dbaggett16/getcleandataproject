@@ -12,8 +12,11 @@ The purpose of this project is to demonstrate how a dataset can be downloaded an
 
 ## Project Files
 **README.md** - This file.  Describes the project and how to excute the scripts.  
+
 **Codebook.md** - Contains detailed description of the dataset and information regarding any transformations or modifications that were done to produce the tidy dataset.  
+
 **run_analyis.R** - The script that performs all operations including downloading the data, tranforming and saving as a tidy dataset in a new file.  
+
 **tidydata** - The resulting tidy data file that can be imported using read.table('[your directory]/tidydata')
 
 ## Prerequisite
@@ -31,12 +34,12 @@ Assuming the R file is in your current working directory.
 ### Usage
 run_analysis(directory, overwrite, dlmethod)
 
-EXAMPLES: |
-----------|-----------------------------------------------------
-          |run_analysis("mynewdirectory")  
-          |run_analysis("myexistingdirectory", TRUE)  
-          |run_analysis("myexistingdirectory", TRUE, "libcurl") 
-----------|-----------------------------------------------------
+**EXAMPLES:**
+>run_analysis("mynewdirectory")  
+>run_analysis("myexistingdirectory", TRUE)  
+>run_analysis("myexistingdirectory", TRUE, "libcurl")  
+
+
 **directory** - You must specify a directory name (in quotes) for the extracted data files. NO DEFAULT
 
 **overwrite** - If the directory you specified already exists.  The script will overwrite it without prompting when this argument is set to TRUE.  Execution will stop if the directory already exists and this value is not set to TRUE. DEFAULT: FALSE
