@@ -111,3 +111,10 @@ Completed Successfully: Type mytidydata <- read.table('[directory]/tidydata') to
 #### Make sure the dplyr package is installed
 >Error in run_analysis("dataextract") :
   Please install 'dplyr' package before running this script
+  
+#### Warning message displayed when *dplyr* package is loaded can be ignored
+>Attaching package: ‘dplyr’
+The following objects are masked from ‘package:stats’:
+    filter, lag
+The following objects are masked from ‘package:base’:
+    intersect, setdiff, setequal, union
