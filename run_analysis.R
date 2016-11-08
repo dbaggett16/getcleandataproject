@@ -8,7 +8,7 @@ run_analysis <- function(directory = 0, overwrite = FALSE, dlmethod = 0)
   if (dir.exists(directory) && overwrite != TRUE) {stop("Warning: Dirctory exists! Choose a different directory or call run_analysis(directory, overwrite) with overwrite = TRUE.")}
   datafile <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
   temp <- tempfile()
-# set file download method
+# set file download method (default: curl for mac, auto for others)
   if (dlmethod != 0) {dlmethod <- dlmethod}
   else if (Sys.info()["sysname"] == "Darwin") {dlmethod <- "curl"} else  {dlmethod <- "auto"}
   
