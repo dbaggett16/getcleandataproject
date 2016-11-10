@@ -68,6 +68,6 @@ run_analysis <- function(directory = 0, overwrite = FALSE, dlmethod = 0)
   write.table(tidydata, file = paste(rootdir, "/tidydata.txt", sep = ""))
 
 # Output ending message and tidydata file location  
-  endingmessage <- paste("Completed Successfully: Type mytidydata <- read.table('", rootdir, "/tidydata.txt') to import tidy data file grouped by subject and activity.", sep = "")
+  endingmessage <- paste("Completed Successfully: Type mytidydata <- read.table('", rootdir, "/tidydata.txt') to import tidy data file.", sep = "")
   message(endingmessage)
 }
