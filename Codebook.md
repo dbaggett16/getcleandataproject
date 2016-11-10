@@ -38,125 +38,125 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+tBodyAcc-XYZ  
+tGravityAcc-XYZ  
+tBodyAccJerk-XYZ  
+tBodyGyro-XYZ  
+tBodyGyroJerk-XYZ  
+tBodyAccMag  
+tGravityAccMag  
+tBodyAccJerkMag  
+tBodyGyroMag  
+tBodyGyroJerkMag  
+fBodyAcc-XYZ  
+fBodyAccJerk-XYZ  
+fBodyGyro-XYZ  
+fBodyAccMag  
+fBodyAccJerkMag  
+fBodyGyroMag  
+fBodyGyroJerkMag  
 
-The set of mean and standard deviation variables that were estimated from these signals are: 
+The set of mean and standard deviation variables that were estimated from these signals are:   
 
-mean(): Mean value
-std(): Standard deviation
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+mean(): Mean value  
+std(): Standard deviation  
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency  
 
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:  
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+gravityMean  
+tBodyAccMean  
+tBodyAccJerkMean  
+tBodyGyroMean  
+tBodyGyroJerkMean  
 
-Complete list of variables
+### Complete list of variables  
 
-1 subject
-2 activity
-3 tBodyAccstdX
-4 tBodyAccstdY
-5 tBodyAccstdZ
-6 tGravityAccstdX
-7 tGravityAccstdY
-8 tGravityAccstdZ
-9 tBodyAccJerkstdX
-10 tBodyAccJerkstdY
-11 tBodyAccJerkstdZ
-12 tBodyGyrostdX
-13 tBodyGyrostdY
-14 tBodyGyrostdZ
-15 tBodyGyroJerkstdX
-16 tBodyGyroJerkstdY
-17 tBodyGyroJerkstdZ
-18 tBodyAccMagstd
-19 tGravityAccMagstd
-20 tBodyAccJerkMagstd
-21 tBodyGyroMagstd
-22 tBodyGyroJerkMagstd
-23 fBodyAccstdX
-24 fBodyAccstdY
-25 fBodyAccstdZ
-26 fBodyAccJerkstdX
-27 fBodyAccJerkstdY
-28 fBodyAccJerkstdZ
-29 fBodyGyrostdX
-30 fBodyGyrostdY
-31 fBodyGyrostdZ
-32 fBodyAccMagstd
-33 fBodyBodyAccJerkMagstd
-34 fBodyBodyGyroMagstd
-35 fBodyBodyGyroJerkMagstd
-36 tBodyAccmeanX
-37 tBodyAccmeanY
-38 tBodyAccmeanZ
-39 tGravityAccmeanX
-40 tGravityAccmeanY
-41 tGravityAccmeanZ
-42 tBodyAccJerkmeanX
-43 tBodyAccJerkmeanY
-44 tBodyAccJerkmeanZ
-45 tBodyGyromeanX
-46 tBodyGyromeanY
-47 tBodyGyromeanZ
-48 tBodyGyroJerkmeanX
-49 tBodyGyroJerkmeanY
-50 tBodyGyroJerkmeanZ
-51 tBodyAccMagmean
-52 tGravityAccMagmean
-53 tBodyAccJerkMagmean
-54 tBodyGyroMagmean
-55 tBodyGyroJerkMagmean
-56 fBodyAccmeanX
-57 fBodyAccmeanY
-58 fBodyAccmeanZ
-59 fBodyAccmeanFreqX
-60 fBodyAccmeanFreqY
-61 fBodyAccmeanFreqZ
-62 fBodyAccJerkmeanX
-63 fBodyAccJerkmeanY
-64 fBodyAccJerkmeanZ
-65 fBodyAccJerkmeanFreqX
-66 fBodyAccJerkmeanFreqY
-67 fBodyAccJerkmeanFreqZ
-68 fBodyGyromeanX
-69 fBodyGyromeanY
-70 fBodyGyromeanZ
-71 fBodyGyromeanFreqX
-72 fBodyGyromeanFreqY
-73 fBodyGyromeanFreqZ
-74 fBodyAccMagmean
-75 fBodyAccMagmeanFreq
-76 fBodyBodyAccJerkMagmean
-77 fBodyBodyAccJerkMagmeanFreq
-78 fBodyBodyGyroMagmean
-79 fBodyBodyGyroMagmeanFreq
-80 fBodyBodyGyroJerkMagmean
-81 fBodyBodyGyroJerkMagmeanFreq
-82 angletBodyAccMeangravity
-83 angletBodyAccJerkMeangravityMean
-84 angletBodyGyroMeangravityMean
-85 angletBodyGyroJerkMeangravityMean
-86 angleXgravityMean
-87 angleYgravityMean
-88 angleZgravityMean
+1 subject  
+2 activity  
+3 tBodyAccstdX  
+4 tBodyAccstdY  
+5 tBodyAccstdZ  
+6 tGravityAccstdX  
+7 tGravityAccstdY  
+8 tGravityAccstdZ  
+9 tBodyAccJerkstdX  
+10 tBodyAccJerkstdY  
+11 tBodyAccJerkstdZ  
+12 tBodyGyrostdX  
+13 tBodyGyrostdY  
+14 tBodyGyrostdZ  
+15 tBodyGyroJerkstdX  
+16 tBodyGyroJerkstdY  
+17 tBodyGyroJerkstdZ  
+18 tBodyAccMagstd  
+19 tGravityAccMagstd  
+20 tBodyAccJerkMagstd  
+21 tBodyGyroMagstd  
+22 tBodyGyroJerkMagstd  
+23 fBodyAccstdX  
+24 fBodyAccstdY  
+25 fBodyAccstdZ  
+26 fBodyAccJerkstdX  
+27 fBodyAccJerkstdY  
+28 fBodyAccJerkstdZ  
+29 fBodyGyrostdX  
+30 fBodyGyrostdY  
+31 fBodyGyrostdZ  
+32 fBodyAccMagstd  
+33 fBodyBodyAccJerkMagstd  
+34 fBodyBodyGyroMagstd  
+35 fBodyBodyGyroJerkMagstd  
+36 tBodyAccmeanX  
+37 tBodyAccmeanY  
+38 tBodyAccmeanZ  
+39 tGravityAccmeanX  
+40 tGravityAccmeanY  
+41 tGravityAccmeanZ  
+42 tBodyAccJerkmeanX  
+43 tBodyAccJerkmeanY  
+44 tBodyAccJerkmeanZ  
+45 tBodyGyromeanX  
+46 tBodyGyromeanY  
+47 tBodyGyromeanZ  
+48 tBodyGyroJerkmeanX  
+49 tBodyGyroJerkmeanY  
+50 tBodyGyroJerkmeanZ  
+51 tBodyAccMagmean  
+52 tGravityAccMagmean  
+53 tBodyAccJerkMagmean  
+54 tBodyGyroMagmean  
+55 tBodyGyroJerkMagmean  
+56 fBodyAccmeanX  
+57 fBodyAccmeanY  
+58 fBodyAccmeanZ  
+59 fBodyAccmeanFreqX  
+60 fBodyAccmeanFreqY  
+61 fBodyAccmeanFreqZ  
+62 fBodyAccJerkmeanX  
+63 fBodyAccJerkmeanY  
+64 fBodyAccJerkmeanZ  
+65 fBodyAccJerkmeanFreqX  
+66 fBodyAccJerkmeanFreqY  
+67 fBodyAccJerkmeanFreqZ  
+68 fBodyGyromeanX  
+69 fBodyGyromeanY  
+70 fBodyGyromeanZ  
+71 fBodyGyromeanFreqX  
+72 fBodyGyromeanFreqY  
+73 fBodyGyromeanFreqZ  
+74 fBodyAccMagmean  
+75 fBodyAccMagmeanFreq  
+76 fBodyBodyAccJerkMagmean  
+77 fBodyBodyAccJerkMagmeanFreq  
+78 fBodyBodyGyroMagmean  
+79 fBodyBodyGyroMagmeanFreq  
+80 fBodyBodyGyroJerkMagmean  
+81 fBodyBodyGyroJerkMagmeanFreq  
+82 angletBodyAccMeangravity  
+83 angletBodyAccJerkMeangravityMean  
+84 angletBodyGyroMeangravityMean  
+85 angletBodyGyroJerkMeangravityMean  
+86 angleXgravityMean  
+87 angleYgravityMean  
+88 angleZgravityMean  
