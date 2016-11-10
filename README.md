@@ -35,8 +35,8 @@ Assuming the R file is in your current working directory.
 run_analysis(directory, overwrite, dlmethod)
 
 **EXAMPLES:**
->run_analysis() {"UCI HAR Dataset" must be your working directory.}
->run_analysis("mynewdirectory")
+>run_analysis() {"UCI HAR Dataset" must be your working directory.}  
+>run_analysis("mynewdirectory")  
 >run_analysis("myexistingdirectory", TRUE)  
 >run_analysis("myexistingdirectory", TRUE, "libcurl")  
 
@@ -82,15 +82,15 @@ run_analysis(directory, overwrite, dlmethod)
 
 ### Normal Output
 
-Downloading data ZIP archive...
-Extracting files to {directory}
-Getting extracted data...
-Merging extracted data...
-Creating descriptive variable names...
-Renaming activities...
-Extracting mean and standard deviation for each measurement.
-Creating tidy data file.
-Completed Successfully: Type mytidydata <- read.table('{directory}/UCI HAR Dataset/tidydata.txt') to import tidy data file grouped by subject and activity.
+Downloading data ZIP archive...  
+Extracting files to {directory}  
+Getting extracted data...  
+Merging extracted data...  
+Creating descriptive variable names...  
+Renaming activities...  
+Extracting mean and standard deviation for each measurement.  
+Creating tidy data file.  
+Completed Successfully: Type mytidydata <- read.table('{directory}/UCI HAR Dataset/tidydata.txt') to import tidy data file.  
 
 ### Troubleshooting
 
